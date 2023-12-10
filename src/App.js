@@ -21,7 +21,7 @@ import Dashboard from "dashboard/Dashboard";
 function App() {
   return (
     <Fragment>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Main></Main>}>
           <Route index element={<HomePage></HomePage>}></Route>
           <Route path="DatLichKhamPage" element={<DatLichKhamPage />}></Route>
@@ -32,14 +32,14 @@ function App() {
             <Route path="Kham-va-dieu-tri" element={<KhamVsDieuTri />}></Route>
           </Route>
         </Route>
-      </Routes>
+      </Routes> */}
 
       {/* <DropDown></DropDown> */}
       {/* <Header></Header> */}
       {/* <NavBar2></NavBar2> */}
       {/* <HeadDown></HeadDown> */}
       {/* {/* <DichVuPage></DichVuPage> */}
-      {/* <Dashboard></Dashboard> */}
+      <Dashboard></Dashboard>
     </Fragment>
   );
 }
