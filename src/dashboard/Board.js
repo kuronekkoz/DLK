@@ -12,7 +12,14 @@ function createData(id, name, email, sdt, time, dichVu) {
 }
 
 const rows = [
-  createData(1, "Frozen yoghurt", 159, 6.0, 24, 4.0),
+  createData(
+    1,
+    "Trinh Viet Hoang",
+    "trinhviethoang@gmail.com",
+    "0382751836",
+    24,
+    "xét nghiệm"
+  ),
   createData(2, "Ice cream sandwich", 237, 9.0, 37, 4.3),
   createData(3, "Eclair", 262, 16.0, 24, 6.0),
   createData(4, "Cupcake", 305, 3.7, 67, 4.3),
@@ -21,6 +28,9 @@ const rows = [
 
 export default function Board() {
   const handleOnClickOk = (id) => {
+    console.log(id);
+  };
+  const handleOnClickNo = (id) => {
     console.log(id);
   };
   return (
@@ -49,9 +59,21 @@ export default function Board() {
               <TableCell align="right">{row.sdt}</TableCell>
               <TableCell align="right">{row.time}</TableCell>
               <TableCell align="right">{row.dichVu}</TableCell>
-              <TableCell align="right" className="space-x-5 cursor-pointer">
-                <button onClick={() => handleOnClickOk(row.id)}>yes</button>
-                <button>no</button>
+              <TableCell align="right" className="cursor-pointer">
+                <button
+                  className="border bg-blue-500 text-white text-xl w-14 hover:bg-dark-blue"
+                  onClick={() => handleOnClickOk(row.id)}
+                >
+                  yes
+                </button>
+              </TableCell>
+              <TableCell align="left" className="cursor-pointer">
+                <button
+                  className="border bg-red-500 text-white text-xl  w-14"
+                  onClick={() => handleOnClickNo(row.id)}
+                >
+                  no
+                </button>
               </TableCell>
             </TableRow>
           ))}

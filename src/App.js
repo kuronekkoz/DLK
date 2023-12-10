@@ -39,9 +39,9 @@ function App() {
       {/* <Header></Header> */}
       {/* <NavBar2></NavBar2> */}
       {/* <HeadDown></HeadDown> */}
-      {/* {/* <DichVuPage></DichVuPage> */}
-      {/* <Dashboard></Dashboard> */}
-      <DatLichKhamForm></DatLichKhamForm>
+      {/* <DichVuPage></DichVuPage> */}
+      <Dashboard></Dashboard>
+      {/* <DatLichKhamForm></DatLichKhamForm> */}
     </Fragment>
   );
 }

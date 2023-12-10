@@ -18,7 +18,7 @@ const SelectDropdown = () => {
         <option value="xetNghiem"> Xét nghiệm - Chẩn đoán hình ảnh</option>
         <option value="phauThuat">Phẫu thuật</option>
         <option value="tiemPhong">
-          Phòng chống kí sinh trùng - tiêm phòng{" "}
+          Phòng chống kí sinh trùng - tiêm phòng
         </option>
         <option value="rangmieng">Chăm sóc răng miệng</option>
         <option value="thamMy">Thẩm mỹ</option>
@@ -26,7 +26,7 @@ const SelectDropdown = () => {
         <option value="luuChuong">Dịch vụ lưu chuồng</option>
         <option value="vanChuyen">Vận chuyển - Khám bệnh tại nhà</option>
 
-        <option value="capCuu">ịch vụ cấp cứu 24/7</option>
+        <option value="capCuu">Dịch vụ cấp cứu 24/7</option>
       </select>
     </div>
   );
