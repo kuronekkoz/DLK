@@ -19,7 +19,7 @@ const rows = [
   createData(5, "Gingerbread", 356, 16.0, 49, 3.9),
 ];
 
-export default function Orders() {
+export default function Board() {
   const handleOnClickOk = (id) => {
     console.log(id);
   };

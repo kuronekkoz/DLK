@@ -3,6 +3,8 @@ import { Controller, useController, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import axios from "axios";
+import Dropdown from "components/dropdown/Dropdown";
+import SelectDropdown from "components/dropdown/SelectDropdown";
 // using react-hook-form
 
 const schemaValidation = Yup.object({
@@ -119,25 +121,11 @@ const RegisterForm = () => {
       </div>
 
       <div className="flex flex-col gap-2 mb-5">
-        <label htmlFor="petName"> Tên pet:</label>
-        <input
-          type="text"
-          id="petName"
-          placeholder="Enter your pet name"
-          className="p-4 rounded-md border border-gray-100 text-red-400"
-          {...register("petName")}
-        />
-        {errors?.petName && (
-          <div className="text-red-500 text-sm ">{errors.petName?.message}</div>
-        )}
-      </div>
-
-      <div className="flex flex-col gap-2 mb-5">
         <label htmlFor="generic"> Chủng loại:</label>
         <input
           type="text"
           id="generic"
-          placeholder="Enter your pet's generic"
+          placeholder="Enter your pet's generic e.g: chó chihuahua,mèo mướp, ..."
           className="p-4 rounded-md border border-gray-100 text-red-400"
           {...register("generic")}
         />
@@ -145,7 +133,9 @@ const RegisterForm = () => {
           <div className="text-red-500 text-sm ">{errors.generic?.message}</div>
         )}
       </div>
-      <div className=" flex justify-center items-center ">
+
+      <SelectDropdown></SelectDropdown>
+      <div className=" flex justify-center items-center mt-10">
         <button
           type="submit"
           id="datlichkham"

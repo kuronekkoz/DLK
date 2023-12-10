@@ -17,6 +17,7 @@ import DichVuPage from "pages/DichVuPage";
 import HeadDown from "components/layout/HeadDown";
 import KhamVsDieuTri from "pages/DichVuPages/KhamVsDieuTri";
 import Dashboard from "dashboard/Dashboard";
+import DatLichKhamForm from "components/form/DatLichKhamForm";
 
 function App() {
   return (
@@ -39,7 +40,8 @@ function App() {
       {/* <NavBar2></NavBar2> */}
       {/* <HeadDown></HeadDown> */}
       {/* {/* <DichVuPage></DichVuPage> */}
-      <Dashboard></Dashboard>
+      {/* <Dashboard></Dashboard> */}
+      <DatLichKhamForm></DatLichKhamForm>
     </Fragment>
   );
 }
