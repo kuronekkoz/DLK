@@ -19,6 +19,8 @@ import KhamVsDieuTri from "pages/DichVuPages/KhamVsDieuTri";
 import Dashboard from "dashboard/Dashboard";
 import DatLichKhamForm from "components/form/DatLichKhamForm";
 
+import CustomDatePicker from "components/DatePicker/CustomDatePicker";
+
 function App() {
   return (
     <Fragment>
@@ -40,8 +42,9 @@ function App() {
       {/* <NavBar2></NavBar2> */}
       {/* <HeadDown></HeadDown> */}
       {/* <DichVuPage></DichVuPage> */}
-      <Dashboard></Dashboard>
-      {/* <DatLichKhamForm></DatLichKhamForm> */}
+      {/* <Dashboard></Dashboard> */}
+      {/* <CustomDatePicker></CustomDatePicker> */}
+      <DatLichKhamForm></DatLichKhamForm>
     </Fragment>
   );
 }

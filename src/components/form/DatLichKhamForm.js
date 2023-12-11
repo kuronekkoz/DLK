@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import Dropdown from "components/dropdown/Dropdown";
 import SelectDropdown from "components/dropdown/SelectDropdown";
+import CustomDatePicker from "components/DatePicker/CustomDatePicker";
 // using react-hook-form
 
 const schemaValidation = Yup.object({
@@ -50,11 +51,6 @@ const RegisterForm = () => {
   useEffect(() => {
     setFocus("firstName");
   }, [setFocus]);
-  // const handleSetDemoData = () => {
-  //   setValue("firstName", "evondev", {});
-  //   setValue("lastName", "tuan");
-  //   setValue("email", "tuan@gmail.com");
-  // };
 
   return (
     <form
@@ -132,6 +128,10 @@ const RegisterForm = () => {
         {errors?.generic && (
           <div className="text-red-500 text-sm ">{errors.generic?.message}</div>
         )}
+      </div>
+      <div className="flex flex-col gap-2 mb-5">
+        <label htmlFor="datepicker"> Chọn thời gian khám:</label>
+        <CustomDatePicker></CustomDatePicker>
       </div>
 
       <SelectDropdown></SelectDropdown>
