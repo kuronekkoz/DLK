@@ -19,16 +19,16 @@ const Header = () => {
               <NavLink to="/">Trang chủ</NavLink>
             </li>
             <li>
-              <NavLink to="/GioiThieuPage">Giới thiệu </NavLink>
+              <NavLink to="/Gioi-thieu">Giới thiệu </NavLink>
             </li>
             <li>
-              <NavLink to="/DichVu">Dịch vụ</NavLink>
+              <NavLink to="/Dich-vu">Dịch vụ</NavLink>
             </li>
             <li>
-              <NavLink to="/DatLichKhamPage">Đặt lịch khám</NavLink>
+              <NavLink to="/Dat-lich-kham">Đặt lịch khám</NavLink>
             </li>
             <li>
-              <NavLink to="/LienHePage">Liên hệ</NavLink>
+              <NavLink to="/Lien-he">Liên hệ</NavLink>
             </li>
           </ul>
           {/* <DropDown></DropDown> */}

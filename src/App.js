@@ -24,18 +24,27 @@ import CustomDatePicker from "components/DatePicker/CustomDatePicker";
 function App() {
   return (
     <Fragment>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Main></Main>}>
           <Route index element={<HomePage></HomePage>}></Route>
-          <Route path="DatLichKhamPage" element={<DatLichKhamPage />}></Route>
-          <Route path="LienHePage" element={<LienHePage />}></Route>
-          <Route path="GioiThieuPage" element={<GioiThieuPage />}></Route>
-          <Route path="DichVu">
+          <Route path="Dat-lich-kham" element={<DatLichKhamPage />}></Route>
+          <Route path="Lien-he" element={<LienHePage />}></Route>
+          <Route path="Gioi-thieu" element={<GioiThieuPage />}></Route>
+          <Route path="Dich-vu">
             <Route index element={<DichVuPage />}></Route>
             <Route path="Kham-va-dieu-tri" element={<KhamVsDieuTri />}></Route>
+            <Route path="Xet-nghiem-chan-doan-hinh-anh"></Route>
+            <Route path="Phau-thuat"></Route>
+            <Route path="Phong-chong-ki-sinh-trung-tiem-phong"></Route>
+            <Route path="Cham-soc-rang-mieng"></Route>
+            <Route path="Tham-my"></Route>
+            <Route path="Xuat-canh-cho-meo"></Route>
+            <Route path="Luu-chuong"></Route>
+            <Route path="Van-chuyen-kham-benh-tai-nha"></Route>
+            <Route path="Cap-cuu"></Route>
           </Route>
         </Route>
-      </Routes> */}
+      </Routes>
 
       {/* <DropDown></DropDown> */}
       {/* <Header></Header> */}
@@ -44,7 +53,7 @@ function App() {
       {/* <DichVuPage></DichVuPage> */}
       {/* <Dashboard></Dashboard> */}
       {/* <CustomDatePicker></CustomDatePicker> */}
-      <DatLichKhamForm></DatLichKhamForm>
+      {/* <DatLichKhamForm></DatLichKhamForm> */}
     </Fragment>
   );
 }
