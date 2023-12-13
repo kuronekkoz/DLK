@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Controller, useController, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
@@ -6,6 +6,7 @@ import axios from "axios";
 import Dropdown from "components/dropdown/Dropdown";
 import SelectDropdown from "components/dropdown/SelectDropdown";
 import CustomDatePicker from "components/DatePicker/CustomDatePicker";
+import ReactDatePicker from "react-datepicker";
 // using react-hook-form
 
 const schemaValidation = Yup.object({
@@ -19,8 +20,8 @@ const schemaValidation = Yup.object({
   address: Yup.string().required("Please enter your address"),
 
   email: Yup.string().email().required("Please enter your email"),
-  petName: Yup.string(),
-  generic: Yup.string(),
+
+  generic: Yup.string().required("Please enter your pet's generic"),
 });
 
 const RegisterForm = () => {
@@ -64,7 +65,7 @@ const RegisterForm = () => {
           <input
             type="text"
             id="name"
-            placeholder="Enter your first name"
+            placeholder="Enter your name"
             className="p-4 rounded-md border border-gray-10 text-red-400  "
             {...register("name")}
             //defaultValue={}
@@ -131,10 +132,11 @@ const RegisterForm = () => {
       </div>
       <div className="flex flex-col gap-2 mb-5">
         <label htmlFor="datepicker"> Chọn thời gian khám:</label>
-        <CustomDatePicker></CustomDatePicker>
+
+        <CustomDatePicker id="datePicker"></CustomDatePicker>
       </div>
 
-      <SelectDropdown></SelectDropdown>
+      <SelectDropdown id="dichVu"></SelectDropdown>
       <div className=" flex justify-center items-center mt-10">
         <button
           type="submit"

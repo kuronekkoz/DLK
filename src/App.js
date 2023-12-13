@@ -10,11 +10,11 @@ import DatLichKhamPage from "pages/DatLichKhamPage";
 import HomePage from "pages/HomePage";
 import Main from "components/layout/Main";
 import LienHePage from "pages/LienHePage";
-import DropDown from "components/dropdown/Dropdown";
+
 import GioiThieuPage from "pages/GioiThieuPage";
-import NavBar2 from "components/layout/NavBar2";
+
 import DichVuPage from "pages/DichVuPage";
-import HeadDown from "components/layout/HeadDown";
+
 import KhamVsDieuTri from "pages/DichVuPages/KhamVsDieuTri";
 import Dashboard from "dashboard/Dashboard";
 import DatLichKhamForm from "components/form/DatLichKhamForm";
