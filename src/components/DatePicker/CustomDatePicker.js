@@ -2,13 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const CustomDatePicker = () => {
-  const [selectedDate, setSelectedDate] = useState(null);
-
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-  };
-
+const CustomDatePicker = ({ selectedDate, onChange }) => {
   return (
     <div className="relative max-w-lg ">
       <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -24,7 +18,7 @@ const CustomDatePicker = () => {
       </div>
       <DatePicker
         selected={selectedDate}
-        onChange={handleDateChange}
+        onChange={onChange}
         placeholderText="Select date"
         className="bg-gray-50 border border-gray-300 text-gray-900  rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 pr-2.5 py-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 cursor-pointer t"
       />

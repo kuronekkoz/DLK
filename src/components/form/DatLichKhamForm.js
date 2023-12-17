@@ -35,19 +35,12 @@ const RegisterForm = () => {
     setFocus,
     setValue,
     control,
-  } = useForm({
-    resolver: yupResolver(schemaValidation),
-    mode: "onChange",
-  });
-  console.log("SignUpFormHook ~ dirtyFields", dirtyFields);
+  } = useForm({ resolver: yupResolver(schemaValidation), mode: "onChange" });
 
-  const onSubmit = async (values) => {
+  const selectedDate = watch("datePicker");
+
+  const onSubmit = (values) => {
     console.log("onSubmit ~ values", values);
-    if (isValid) {
-      console.log("send data to backend");
-
-      reset({});
-    }
   };
   useEffect(() => {
     setFocus("firstName");
@@ -133,10 +126,17 @@ const RegisterForm = () => {
       <div className="flex flex-col gap-2 mb-5">
         <label htmlFor="datepicker"> Chọn thời gian khám:</label>
 
-        <CustomDatePicker id="datePicker"></CustomDatePicker>
+        <CustomDatePicker
+          id="datePicker"
+          selectedDate={selectedDate}
+          onChange={(date) => setValue("datePicker", date)}
+        ></CustomDatePicker>
       </div>
 
-      <SelectDropdown id="dichVu"></SelectDropdown>
+      <SelectDropdown
+        id="dichVu"
+        register={register("dichVu")}
+      ></SelectDropdown>
       <div className=" flex justify-center items-center mt-10">
         <button
           type="submit"
@@ -161,7 +161,7 @@ const MyInput = ({ control, ...props }) => {
     name: props.name,
     defaultValue: "",
   });
-  console.log("MyInput ~ field", field);
+
   return (
     <input
       className="p-4 rounded-md border border-gray-100"

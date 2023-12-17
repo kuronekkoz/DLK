@@ -1,6 +1,6 @@
 import React from "react";
 
-const SelectDropdown = () => {
+const SelectDropdown = ({ register }) => {
   return (
     <div>
       <label
@@ -12,6 +12,7 @@ const SelectDropdown = () => {
       <select
         id="dichVu"
         className="bg-gray-50 border border-gray-300 text-gray-900  rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 space-y-5 boder cursor-pointer "
+        {...register}
       >
         <option selected>Chọn dịch vụ</option>
         <option value="kham">Khám và điều trị</option>

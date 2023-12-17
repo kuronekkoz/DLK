@@ -5,7 +5,7 @@ import React, { Fragment } from "react";
 const HomePage = () => {
   return (
     <Fragment>
-      <div className="mb-6 mt-10">
+      <div className="mb-6 mt-20">
         <div className="w-full h-full rounded-lg relative">
           <img
             src={
@@ -15,15 +15,15 @@ const HomePage = () => {
             className="w-full h-[700px] object-cover rounded-lg object-bottom"
           />
         </div>
-        <h2 className="font-bold text-5xl mb-5 text-teal-500 text-center mt-5 ">
+        <h2 className="font-bold text-6xl mb-5 text-teal-500 text-center mt-10 ">
           Bệnh viện thú y Pet Care Center
         </h2>
-        <div className="mt-5 text-center text-3xl font-bold">
+        <div className="mt-10 text-center text-3xl font-bold">
           Nơi tin cậy để thăm khám, chẩn đoán, điều trị nội trú và ngoại trú cho
           thú cưng
         </div>
 
-        <div className="flex relative w-full rounded-lg h-[450px] mt-10">
+        <div className="flex relative w-full rounded-lg h-[450px] mt-20">
           <div className="overlay absolute inset-0 rounded-lg"></div>
           <img
             src={`https://petcare.vn/wp-content/uploads/2016/06/khambenh-1.jpg`}

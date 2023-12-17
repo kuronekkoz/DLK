@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 
 import "swiper/scss";
 
-import Register from "components/form/RegisterForm";
 import Footer from "components/layout/Footer";
 import Header from "components/layout/Header";
 import DatLichKhamPage from "pages/DatLichKhamPage";
@@ -48,8 +47,7 @@ function App() {
 
       {/* <DropDown></DropDown> */}
       {/* <Header></Header> */}
-      {/* <NavBar2></NavBar2> */}
-      {/* <HeadDown></HeadDown> */}
+
       {/* <DichVuPage></DichVuPage> */}
       {/* <Dashboard></Dashboard> */}
       {/* <CustomDatePicker></CustomDatePicker> */}
